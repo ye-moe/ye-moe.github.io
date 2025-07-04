@@ -241,15 +241,26 @@
         <section class="contact">
           <h2>Contact</h2>
           <p class="subtitle">Feel free to reach out to me</p>
-          <form class="contact-form">
+          <form
+            action="https://formsubmit.co/4610828615799d9d65a7c6ff164159af"
+            method="POST"
+            class="contact-form"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://yourdomain.com/thank-you.html"
+            />
+
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" required />
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email" required />
 
             <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message" required></textarea>
 
             <button type="submit">Submit</button>
           </form>
